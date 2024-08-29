@@ -22,7 +22,8 @@ most cases your base Wings version should match that of your Panel.
 | 1.8.x         | 1.6.x         |           | 7.4, 8.0, 8.1     |
 | 1.9.x         | 1.6.x         |           | 7.4, 8.0, 8.1     |
 | 1.10.x        | 1.7.x         |           | 7.4, 8.0, 8.1     |
-| **1.11.x**    | **1.11.x**    | ✅         | 8.1, 8.2, **8.3** |
+| 1.11.x        | 1.11.x        | ✅        | 8.1, 8.2, **8.3** |
+| **1.12.x**    | **1.11.x**    | ✅        | 8.2, **8.3**      |
 
 ::: tip Wings releases
 There are no 1.8.x, 1.9.x, or 1.10.x releases of Wings.
@@ -30,7 +31,7 @@ There are no 1.8.x, 1.9.x, or 1.10.x releases of Wings.
 
 ## Update Dependencies
 
-- PHP `8.1`, `8.2`, or `8.3` (recommended)
+- PHP `8.2`, or `8.3` (recommended)
 - Composer `2.X`
 
 
@@ -38,7 +39,7 @@ There are no 1.8.x, 1.9.x, or 1.10.x releases of Wings.
 should see an output similar to the result below. If you do not see at least PHP 8.1 and Composer 2, you will need to upgrade by following
 our [PHP Upgrade Guide](/guides/php_upgrade.md) and return to this documentation afterward.
 
-```
+```shell
 vagrant@pterodactyl:~/app$ php -v
 PHP 8.1.5 (cli) (built: Apr 21 2022 10:32:13) (NTS)
 Copyright (c) The PHP Group

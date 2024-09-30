@@ -44,6 +44,12 @@ sudo firewall-cmd --add-service=http --permanent
 sudo firewall-cmd --add-service=https --permanent 
 sudo firewall-cmd --reload
 
+#SELinux configuration
+The following command will allow nginx to work with redis.
+setsebool -P httpd_can_network_connect 1
+setsebool -P httpd_execmem 1
+setsebool -P httpd_unified 1
+
 # Install Composer
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 ```
